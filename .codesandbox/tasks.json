@@ -1,0 +1,88 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "predev": {
+      "name": "predev",
+      "command": "yarn predev",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "yarn dev",
+      "runAtStart": true
+    },
+    "config:link": {
+      "name": "config:link",
+      "command": "yarn config:link",
+      "runAtStart": false
+    },
+    "config:push": {
+      "name": "config:push",
+      "command": "yarn config:push",
+      "runAtStart": false
+    },
+    "generate": {
+      "name": "generate",
+      "command": "yarn generate",
+      "runAtStart": false
+    },
+    "deploy": {
+      "name": "deploy",
+      "command": "yarn deploy",
+      "runAtStart": false
+    },
+    "config:use": {
+      "name": "config:use",
+      "command": "yarn config:use",
+      "runAtStart": false
+    },
+    "env": {
+      "name": "env",
+      "command": "yarn env",
+      "runAtStart": false
+    },
+    "start": {
+      "name": "start",
+      "command": "yarn start",
+      "runAtStart": false
+    },
+    "docker-start": {
+      "name": "docker-start",
+      "command": "yarn docker-start",
+      "runAtStart": false
+    },
+    "setup": {
+      "name": "setup",
+      "command": "yarn setup",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint",
+      "runAtStart": false
+    },
+    "shopify": {
+      "name": "shopify",
+      "command": "yarn shopify",
+      "runAtStart": false
+    },
+    "prisma": {
+      "name": "prisma",
+      "command": "yarn prisma",
+      "runAtStart": false
+    }
+  }
+}
