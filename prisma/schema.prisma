@@ -7,5 +7,16 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = "mongodb+srv://rekss98:test123@cluster0.hruohae.mongodb.net/RateMate"
+}
+
+model Session {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  shop        String
+  state       String
+  isOnline    Boolean   @default(false)
+  scope       String?
+  expires     DateTime?
+  accessToken String
+  userId      BigInt?
 }
